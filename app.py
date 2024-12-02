@@ -12,7 +12,7 @@ def get_coordinates(address):
         url = "https://api.opencagedata.com/geocode/v1/json"
         params = {
             "q": address,
-            "key": "85af1d8affb3414488fb467a1d1861e5",  # OpenCage API anahtarınız
+            "key": "Apı_key",  # OpenCage API anahtarınız
             "language": "tr",  # Türkçe dil desteği
             "no_annotations": 1  # Gereksiz açıklamaları engeller
         }
