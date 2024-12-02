@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koordinat Bulma</title>
+</head>
+<body>
+    <h1>Adres Koordinatlarını Bul</h1>
+    
+    <h2>Adres Girişi</h2>
+    <form action="/get-coordinates" method="POST">
+        <label>İl: </label><input type="text" name="il" required><br>
+        <label>İlçe: </label><input type="text" name="ilce" required><br>
+        <label>Mahalle: </label><input type="text" name="mahalle" required><br>
+        <label>Sokak: </label><input type="text" name="sokak" required><br>
+        <button type="submit">Koordinatları Bul</button>
+    </form>
+
+    <h2>Excel Dosyası Yükle</h2>
+    <form action="/upload-excel" method="POST" enctype="multipart/form-data">
+        <label>Excel Dosyasını Seç: </label><input type="file" name="file" required><br><br>
+        <button type="submit">Excel'i Yükle</button>
+    </form>
+
+</body>
+</html>
